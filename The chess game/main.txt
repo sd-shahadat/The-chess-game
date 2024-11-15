@@ -1,0 +1,21 @@
+package CHESS;
+
+import javax.swing.*;
+import java.awt.*;
+
+public class Main {
+
+    public static void main(String[] args) {
+        
+        JFrame fram = new JFrame();
+        fram.getContentPane() .setBackground(Color.BLACK);
+        fram.setLayout(new GridBagLayout());
+        fram.setMinimumSize(new Dimension(1000, 1000));
+        fram.setLocationRelativeTo(null);
+
+        Board board = new Board();
+        fram.add(board);
+        
+        fram.setVisible(true);
+    }
+}
